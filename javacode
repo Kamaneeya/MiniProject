@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class GuessNumber {
+	public static void main(String[] args) {
+	int usernumber=0;
+	Scanner sc=new Scanner(System.in);
+	int Mynumber = (int)(Math.random()*100);
+	do {
+		System.out.println("Guess my number:");
+		usernumber = sc.nextInt();
+		if(usernumber == Mynumber ) {
+			System.out.println("WOHOOO HURRAYYYY CORRECT NUMBERRR!!!!");
+			break;
+		}
+		else if(usernumber > Mynumber) {
+			System.out.println("Your number is Too Large");
+			System.out.println("Guess another number");
+			}
+		else {
+			System.out.println("Your number is Too Small");
+		}
+		
+	}while(usernumber >=0);
+
+	}
+
+}
